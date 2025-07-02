@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+    background: #F5F5F5; /* Economist light gray */
+    color: #222222; /* Economist dark gray */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    color: #222222;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+    background: #E3120B; /* Economist red */
+    color: #fff;
+    border: none;
+  }
+
+  .btn-secondary {
+    @apply font-medium py-3 px-6 rounded-lg transition-all duration-300 border;
+    background: #F5F5F5;
+    color: #222222;
+    border-color: #B1B1B1;
+  }
+
+  .btn-outline {
+    @apply font-medium py-3 px-6 rounded-lg transition-all duration-300 border-2;
+    border-color: #E3120B;
+    color: #E3120B;
+    background: transparent;
+  }
+
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .card {
+    @apply rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border;
+    background: #fff;
+    border-color: #B1B1B1;
+  }
+
+  .skill-badge {
+    @apply px-3 py-1 rounded-full text-sm font-medium inline-block m-1;
+    background: #E3120B;
+    color: #fff;
+  }
+
+  .text-gradient {
+    background: linear-gradient(90deg, #E3120B 0%, #B1B1B1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .hero-background {
+    background: #222222;
+  }
+
+  .section-background {
+    background: #F5F5F5;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .backdrop-blur-xs {
+    backdrop-filter: blur(2px);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B1B1B1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E3120B;
+}
+
+/* Blog content styling */
+.blog-content {
+  @apply text-secondary-700 leading-relaxed;
+}
+
+.blog-content h2 {
+  @apply text-2xl font-bold text-secondary-900 mt-8 mb-4;
+}
+
+.blog-content h3 {
+  @apply text-xl font-semibold text-secondary-900 mt-6 mb-3;
+}
+
+.blog-content h4 {
+  @apply text-lg font-medium text-secondary-900 mt-4 mb-2;
+}
+
+.blog-content p {
+  @apply mb-4;
+}
+
+.blog-content ul, .blog-content ol {
+  @apply mb-4 ml-6;
+}
+
+.blog-content li {
+  @apply mb-2;
+}
+
+.blog-content ul li {
+  @apply list-disc;
+}
+
+.blog-content ol li {
+  @apply list-decimal;
+}
+
+.blog-content pre {
+  @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4;
+}
+
+.blog-content code {
+  @apply bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm;
+}
+
+.blog-content pre code {
+  @apply bg-transparent text-gray-100 p-0;
+}
+
+.blog-content strong {
+  @apply font-semibold text-secondary-900;
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
