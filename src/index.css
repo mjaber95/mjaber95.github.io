@@ -12,6 +12,14 @@
     line-height: 1.6;
     background: #F5F5F5; /* Economist light gray */
     color: #222222; /* Economist dark gray */
+    margin: 0;
+    padding: 0;
+  }
+
+  .scrolling-gradient-bg {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: 100% 100%;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -53,8 +61,9 @@
 
   .card {
     @apply rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border;
-    background: #fff;
-    border-color: #B1B1B1;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-color: rgba(177, 177, 177, 0.3);
   }
 
   .skill-badge {
@@ -76,7 +85,8 @@
   }
 
   .section-background {
-    background: #F5F5F5;
+    background: rgba(245, 245, 245, 0.8);
+    backdrop-filter: blur(10px);
   }
 }
 
@@ -96,6 +106,16 @@
 
   .backdrop-blur-xs {
     backdrop-filter: blur(2px);
+  }
+
+  .gradient-overlay {
+    background: linear-gradient(135deg, 
+      rgba(245, 245, 245, 0.1) 0%, 
+      rgba(232, 244, 248, 0.1) 25%, 
+      rgba(225, 245, 254, 0.1) 50%, 
+      rgba(243, 229, 245, 0.1) 75%, 
+      rgba(255, 243, 224, 0.1) 100%);
+    backdrop-filter: blur(5px);
   }
 }
 

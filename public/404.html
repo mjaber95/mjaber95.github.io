@@ -21,27 +21,24 @@
     
     <title>Mamdouh Jaber - Data Professional & Teacher</title>
     
-    <!-- GitHub Pages redirect script for React Router -->
+    <!-- GitHub Pages 404 redirect script for React Router -->
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
       // https://github.com/rafgraph/spa-github-pages
       
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
+      var pathSegmentsToKeep = 0;
+      
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
     </script>
-    <script type="module" crossorigin src="/assets/index-ea3d06be.js"></script>
-    <link rel="stylesheet" href="/assets/index-696be66c.css">
   </head>
   <body>
     <div id="root"></div>
-    
   </body>
 </html>

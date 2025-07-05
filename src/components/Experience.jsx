@@ -121,7 +121,7 @@ const Experience = () => {
   ]
 
   return (
-    <section id="experience" className="section-padding section-background">
+    <section id="experience" className="section-padding">
       <div className="container">
         <motion.div
           ref={ref}

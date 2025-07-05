@@ -102,7 +102,7 @@ const Teaching = () => {
   ]
 
   return (
-    <section id="teaching" className="section-padding section-background">
+    <section id="teaching" className="section-padding">
       <div className="container">
         <motion.div
           ref={ref}

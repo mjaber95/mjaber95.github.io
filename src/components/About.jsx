@@ -17,7 +17,7 @@ const About = () => {
   ]
 
   return (
-    <section id="about" className="section-padding section-background">
+    <section id="about" className="section-padding">
       <div className="container">
         <motion.div
           ref={ref}
