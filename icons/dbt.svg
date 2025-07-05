@@ -1,0 +1,21 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="24" cy="24" r="24" fill="#FF694B"/>
+  
+  <!-- dbt logo elements -->
+  <path d="M12 16h24v16l-12 8-12-8V16z" fill="white"/>
+  <path d="M16 20h16v8l-8 4-8-4V20z" fill="#FF694B"/>
+  <path d="M20 24h8v4l-4 2-4-2V24z" fill="white"/>
+  
+  <!-- Data transformation arrows -->
+  <path d="M14 14l4 2-4 2" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M34 14l-4 2 4 2" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Small data dots -->
+  <circle cx="18" cy="12" r="1" fill="white"/>
+  <circle cx="24" cy="10" r="1" fill="white"/>
+  <circle cx="30" cy="12" r="1" fill="white"/>
+  <circle cx="18" cy="36" r="1" fill="white"/>
+  <circle cx="24" cy="38" r="1" fill="white"/>
+  <circle cx="30" cy="36" r="1" fill="white"/>
+</svg>

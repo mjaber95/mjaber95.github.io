@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bashGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4EAA25;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="8" fill="url(#bashGradient)"/>
+  <rect x="4" y="4" width="56" height="56" rx="6" fill="#000000" opacity="0.8"/>
+  <text x="32" y="20" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle" fill="#4EAA25">$</text>
+  <rect x="8" y="25" width="48" height="2" fill="#4EAA25" opacity="0.7"/>
+  <rect x="8" y="30" width="36" height="2" fill="#4EAA25" opacity="0.5"/>
+  <rect x="8" y="35" width="42" height="2" fill="#4EAA25" opacity="0.6"/>
+  <rect x="8" y="40" width="28" height="2" fill="#4EAA25" opacity="0.4"/>
+  <rect x="8" y="45" width="38" height="2" fill="#4EAA25" opacity="0.5"/>
+  <rect x="8" y="50" width="20" height="2" fill="#4EAA25" opacity="0.3"/>
+  <circle cx="50" cy="52" r="2" fill="#4EAA25" opacity="0.6"/>
+</svg>

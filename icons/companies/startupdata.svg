@@ -1,0 +1,25 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="24" cy="24" r="24" fill="#F59E0B"/>
+  
+  <!-- Rocket ship -->
+  <path d="M24 8l4 8h-8l4-8z" fill="white"/>
+  <path d="M20 16h8v8h-8z" fill="white"/>
+  <path d="M18 24h4v8h-4z" fill="#FCD34D"/>
+  <path d="M26 24h4v8h-4z" fill="#FCD34D"/>
+  
+  <!-- Rocket fins -->
+  <path d="M16 20l4 4v8l-4-4v-8z" fill="#EF4444"/>
+  <path d="M32 20l-4 4v8l4-4v-8z" fill="#EF4444"/>
+  
+  <!-- Data stream -->
+  <circle cx="12" cy="32" r="1" fill="white"/>
+  <circle cx="14" cy="34" r="1" fill="white"/>
+  <circle cx="16" cy="36" r="1" fill="white"/>
+  <circle cx="32" cy="36" r="1" fill="white"/>
+  <circle cx="34" cy="34" r="1" fill="white"/>
+  <circle cx="36" cy="32" r="1" fill="white"/>
+  
+  <!-- Window -->
+  <circle cx="24" cy="20" r="2" fill="#F59E0B"/>
+</svg>
